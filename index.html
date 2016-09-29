@@ -21,7 +21,7 @@ title: I'm Ronnie Wang
 <ul class="list-group">
     {% for post in category.last %}
     <li class="list-group-item">
-        {{ post.date | date:"%d/%m/%Y"}}<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        {{ post.date | date:"%d/%m/%Y"}}<a href="{{ post.url }}">{{ post.title }}</a>
         <p>{{ post.description }}</p>
     </li>
     {% endfor %}
