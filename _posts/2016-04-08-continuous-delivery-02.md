@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 配置管理
+category: continous-delivery
 ---
 
 # 第二章 配置管理
