@@ -4,16 +4,16 @@ title: I'm Ronnie Wang
 ---
 <h2>{{ page.title }}</h2>
 
-<ul class="list-group">
-    {% for post in site.posts %}
-    <li class="list-group-item">
-        <a href="{{ site.baseurl }}{{ post.url }}">
-            <span class="glyphicon glyphicon-calendar"></span>{{ post.date | date_to_string }} {{ post.title }}
-        </a>
-        <p>{{ post.description }}</p>
-    </li>
-    {% endfor %}
-</ul>
+<!--<ul class="list-group">-->
+    <!--{% for post in site.posts %}-->
+    <!--<li class="list-group-item">-->
+        <!--<a href="{{ site.baseurl }}{{ post.url }}">-->
+            <!--<span class="glyphicon glyphicon-calendar"></span>{{ post.date | date_to_string }} {{ post.title }}-->
+        <!--</a>-->
+        <!--<p>{{ post.description }}</p>-->
+    <!--</li>-->
+    <!--{% endfor %}-->
+<!--</ul>-->
 
 {% for category in site.categories %}
 <h2>{{ category | first }}</h2>
