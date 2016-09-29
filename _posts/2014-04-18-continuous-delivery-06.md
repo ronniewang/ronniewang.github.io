@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 构建与部署的脚本化
+category: continuous-delivery
 ---
 
 # 第六章 构建与部署的脚本化

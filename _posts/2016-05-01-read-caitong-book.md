@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 读《精进——如何成为一个很厉害的人》
+category: reading
 ---
 
 # 读《精进——如何成为一个很厉害的人》

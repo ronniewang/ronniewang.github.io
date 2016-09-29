@@ -1,7 +1,8 @@
 ---
 layout: default
 title: 远程工作
-descriptoin: 关于远程工作的一些问题和答案
+description: 关于远程工作的一些问题和答案
+category: continuous-delivery
 ---
 
 <h2>{{ page.title }}</h2>

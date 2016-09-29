@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 数据管理
-category: continous-delivery
+category: continuous-delivery
 ---
 
 # 第二章 数据管理

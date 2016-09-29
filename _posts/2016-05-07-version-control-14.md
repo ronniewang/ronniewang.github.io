@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 版本控制进阶
+category: continuous-delivery
 ---
 
 # 版本控制进阶
