@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 构建与部署的脚本化
-category: software-architect
+category: Software-Architect
 ---
 
 test

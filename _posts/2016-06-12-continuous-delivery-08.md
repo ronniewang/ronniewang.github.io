@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 自动化验收测试
-category: continuous-delivery
+category: Continuous-Delivery
 ---
 
 # 第八章

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 部署流水线解析
-category: continuous-delivery
+category: Continuous-Delivery
 ---
 
 # 第五章 部署流水线解析

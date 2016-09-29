@@ -1,10 +1,11 @@
 ---
 layout: default
 title: 程序员的健身之路
-category: body-building
+category: Body-Building
 ---
 
-程序员的健身之路
+<h2>{{ page.title }}</h2>
+<p><span class="glyphicon glyphicon-calendar"></span> {{ page.date | date_to_string }}</p>
 
 近两年，肠胃一直不是很好，每天晚上回到家里半死不活的状态，吃完饭就胃肠难受，去医院看了两次都说没什么事，但是我感受到的痛苦是真实存在的啊
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 持续集成
-category: continuous-delivery
+category: Continuous-Delivery
 ---
 
 # 第三章 持续集成

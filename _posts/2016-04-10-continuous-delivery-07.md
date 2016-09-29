@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 提交阶段
-category: continuous-delivery
+category: Continuous-Delivery
 ---
 
 # 第七章 提交阶段

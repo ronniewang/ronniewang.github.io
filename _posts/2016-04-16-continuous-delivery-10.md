@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 应用程序的部署与发布
-category: continuous-delivery
+category: Continuous-Delivery
 ---
 
 # 第十章 应用程序的部署与发布

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 基础设施和环境管理
-category: continuous-delivery
+category: Continuous-Delivery
 ---
 
 # 第十一章 基础设施和环境管理

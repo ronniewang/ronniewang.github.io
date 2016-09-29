@@ -2,7 +2,7 @@
 layout: default
 title: 远程工作
 description: 关于远程工作的一些问题和答案
-category: continuous-delivery
+category: New-Thought
 ---
 
 <h2>{{ page.title }}</h2>
