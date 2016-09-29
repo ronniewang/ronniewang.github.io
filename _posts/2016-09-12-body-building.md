@@ -2,6 +2,7 @@
 layout: default
 title: 程序员的健身之路
 category: Body-Building
+description: 运动是永恒的话题，人人都知道运动的重要性
 ---
 
 <h2>{{ page.title }}</h2>
