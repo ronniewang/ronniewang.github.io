@@ -6,7 +6,7 @@ description: 运动是永恒的话题，人人都知道运动的重要性
 ---
 
 <h2>{{ page.title }}</h2>
-<p><span class="glyphicon glyphicon-calendar"></span> {{ page.date | date_to_string }}</p>
+<p><span class="glyphicon glyphicon-calendar"></span> {{ page.date | date:"%Y年 %m月 %d日" }} Ronnie Wang</p>
 
 近两年，肠胃一直不是很好，每天晚上回到家里半死不活的状态，吃完饭就胃肠难受，去医院看了两次都说没什么事，但是我感受到的痛苦是真实存在的啊
 
@@ -60,7 +60,6 @@ description: 运动是永恒的话题，人人都知道运动的重要性
 * 哑铃摆举（左右） 3*10 7.5kg
 * 哑铃飞鸟 3*10 4.5kg
 * 哑铃弯举 3*12 4.5kg
-
 
 ### 08-31
 
