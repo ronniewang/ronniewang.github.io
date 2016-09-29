@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 持续交付概述
+category: continous-delivery
 ---
 <h2>{{ page.title }}</h2>
 <p>{{ page.date | date_to_string }}</p>
