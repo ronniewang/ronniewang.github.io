@@ -9,7 +9,7 @@ category: Relationship
 <p><span class="glyphicon glyphicon-calendar"></span> {{ page.date | date:"%Y年 %m月 %d日" }} Ronnie Wang</p>
 
 
-沟通的模型跟信息论的模型其实是一样的
+沟通的模型跟信息论中信息的传递模型其实是一样的
 
 传递者的意图===信道(噪音干扰, 传递者的编码特点)===>传递者的行为===信道(噪音干扰, 接受者的解码特点)===>对接受者的影响
 
@@ -99,6 +99,10 @@ category: Relationship
 XYZ句式
 
 当你在X情境下做Y的时候, 我感到Z
+
+```
+你刚才把衣服扔到地下, 我感到很不高兴
+```
 
 ### 3.3. 积极倾听
 
