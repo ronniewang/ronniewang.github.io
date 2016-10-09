@@ -1,3 +1,6 @@
+---
+layout: default
+title: Daily Life
 category: Daily-Life
 description: 
 ---
