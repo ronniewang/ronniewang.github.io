@@ -1,7 +1,7 @@
 ---
 layout: default
-title: My Tweets
-category: Tweets
+title: 通向财富自由之路
+category: New-Thought
 description: 
 ---
 
