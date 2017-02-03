@@ -20,7 +20,7 @@ title: I'm Ronnie Wang
 <span>该类别下共{{ category | last | size }}篇文章</span>
     {% for post in category.last %}
     <div class="item">
-        <span class="glyphicon glyphicon-calendar"></span>{{ post.date | date:"%Y-%m-%d" }} <a href="{{ post.url }}">{{ post.title }}</a>
+        <a href="{{ post.url }}">{{ post.title }}</a> <span class="glyphicon glyphicon-calendar"></span>{{ post.date | date:"%Y-%m-%d" }} by Ronnie Wang
         <p class="desc"> {{ post.description }}</p>
         <hr/>
     </div>
