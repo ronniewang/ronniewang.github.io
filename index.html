@@ -6,15 +6,13 @@ title: I'm Ronnie Wang
 
 <script>
     var post = $.get("../post.json");
-    alert(post);
-    $("#content").appendChild("<div>hhahah</div>")
+    $.each(post, function (n, value) {
+        var trs = "";
+        trs += "<a href=\"+value.url+\" class=\"title\">{{ post.title }}</a>"
+                + "<br/>"
+                + "<span class=\"glyphicon glyphicon-calendar\"></span>" + value.date + " by Ronnie Wang"
+                + "<p class=\"desc\"> " + value.description + "</p>"
+                + "<hr/>";
+        $("#content").append("<div>" + trs + "</div>");
+    });
 </script>
-{% for post in category.last %}
-<div>
-    <a href="{{ post.url }}" class="title">{{ post.title }}</a>
-    <br/>
-    <span class="glyphicon glyphicon-calendar"></span>{{ post.date | date:"%Y-%m-%d" }} by Ronnie Wang
-    <p class="desc"> {{ post.description }}</p>
-    <hr/>
-</div>
-{% endfor %}
