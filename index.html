@@ -4,16 +4,16 @@ title: I'm Ronnie Wang
 ---
 <h1>{{ page.title }}</h1>
 
-<!--{% for category in site.categories %}-->
-    <!--<h2>{{ category | first }}</h2>-->
-    <!--<span>该类别下共{{ category | last | size }}篇文章</span>-->
-    {% for post in category.last %}
-    <div>
-        <a href="{{ post.url }}" class="title">{{ post.title }}</a>
-        <br/>
-        <span class="glyphicon glyphicon-calendar"></span>{{ post.date | date:"%Y-%m-%d" }} by Ronnie Wang
-        <p class="desc"> {{ post.description }}</p>
-        <hr/>
-    </div>
-    {% endfor %}
-<!--{% endfor %}-->
+<script>
+    var post = $.get("../post.json");
+    alert(post)
+</script>
+{% for post in category.last %}
+<div>
+    <a href="{{ post.url }}" class="title">{{ post.title }}</a>
+    <br/>
+    <span class="glyphicon glyphicon-calendar"></span>{{ post.date | date:"%Y-%m-%d" }} by Ronnie Wang
+    <p class="desc"> {{ post.description }}</p>
+    <hr/>
+</div>
+{% endfor %}
