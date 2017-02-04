@@ -8,8 +8,8 @@ title: I'm Ronnie Wang
     $.getJSON("../post.json", function (data) {
         $.each(data, function (n, value) {
             var div = "";
-            div += "<img class='img' src='http://ronnie.wang/images/" + n % 15 + ".png'/>"
-                    + "<a href=\"+value.url+\" class=\"title\">" + value.title + "</a>"
+            div += ""
+                    + "<a href=\"+value.url+\" class=\"title\"><img class='img' src='http://ronnie.wang/images/" + n % 15 + ".png'/>" + value.title + "</a>"
                     + "<br/>"
                     + "<span class=\"glyphicon glyphicon-calendar\"></span>" + value.date + " by Ronnie Wang"
                     + "<p class=\"desc\"> " + value.description + "</p>"
