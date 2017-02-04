@@ -5,7 +5,7 @@ description:
 category: Relationship
 ---
 
-<h2>{{ page.title }}</h2>
+<h1>{{ page.title }}</h1>
 <p><span class="glyphicon glyphicon-calendar"></span> {{ page.date | date:"%Y年 %m月 %d日" }} Ronnie Wang</p>
 
 **社会认知**一般指我们理解社会现象的知觉判断过程

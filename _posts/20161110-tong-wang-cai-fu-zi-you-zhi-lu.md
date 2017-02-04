@@ -5,7 +5,7 @@ category: New-Thought
 description: 
 ---
 
-<h2>{{ page.title }}</h2>
+<h1>{{ page.title }}</h1>
 <p><span class="glyphicon glyphicon-calendar"></span> {{ page.date | date:"%Y年 %m月 %d日" }} Ronnie Wang</p>
 
 财富自由是指不用为了生活所需而出卖自己的时间, 财富自由只是**成长**路上的一个里程碑, 我们一辈子的都应该走在成长的道路上

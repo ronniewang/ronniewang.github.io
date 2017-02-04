@@ -5,7 +5,7 @@ description: 亲密关系如何舒畅沟通, 如何避免冲突升级
 category: Relationship
 ---
 
-<h2>{{ page.title }}</h2>
+<h1>{{ page.title }}</h1>
 <p><span class="glyphicon glyphicon-calendar"></span> {{ page.date | date:"%Y年 %m月 %d日" }} Ronnie Wang</p>
 
 

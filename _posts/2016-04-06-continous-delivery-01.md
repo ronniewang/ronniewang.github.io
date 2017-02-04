@@ -3,7 +3,7 @@ layout: default
 title: 持续交付
 category: Continuous-Delivery
 ---
-<h2>{{ page.title }}</h2>
+<h1>{{ page.title }}</h1>
 <p>{{ page.date | date_to_string }}</p>
 
 ----

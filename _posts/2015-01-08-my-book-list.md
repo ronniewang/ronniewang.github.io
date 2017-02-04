@@ -5,7 +5,7 @@ description: 书籍是是人类进步的阶梯, 当然也是我个人成长的�
 category: Reading
 ---
 
-<h2>{{ page.title }}</h2>
+<h1>{{ page.title }}</h1>
 <p><span class="glyphicon glyphicon-calendar"></span> {{ page.date | date:"%Y年 %m月 %d日" }} Ronnie Wang</p>
 
 # 技术书籍

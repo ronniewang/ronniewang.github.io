@@ -2,7 +2,7 @@
 layout: default
 title: 关于并发
 ---
-<h2>{{ page.title }}</h2>
+<h1>{{ page.title }}</h1>
 <p>{{ page.date | date_to_string }}</p>
 
 ----

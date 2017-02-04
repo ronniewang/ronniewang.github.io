@@ -5,7 +5,7 @@ description: 经验并不等于工作时间
 category: My-Thought
 ---
 
-<h2>{{ page.title }}</h2>
+<h1>{{ page.title }}</h1>
 <p><span class="glyphicon glyphicon-calendar"></span> {{ page.date | date:"%Y年 %m月 %d日" }} Ronnie Wang</p>
 
 在招聘网站上, 最多的要求就是有XX年工作经验, 经验就是你所有踩过的坑, 解决的问题, 还有你在这过程中形成的方法论
