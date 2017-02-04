@@ -8,7 +8,8 @@ layout: nil
   "title": "{{post.title}}",
   "url": "{{site.url}}{{post.url}}",
   "date": "{{ post.date | date:'%Y-%m-%d' }}",
-  "category":[{% for category in post.categories %}"{{category}}"{% if forloop.last == false %}, {% endif %}{% endfor %}]
+  "category": "{{post.category}}"
 }
-{% if forloop.last == false %}, {% endif %}{% endfor %}
+{% if forloop.last == false %}, {% endif %}
+{% endfor %}
 ]
