@@ -6,7 +6,8 @@ title: I'm Ronnie Wang
 
 <script>
     var post = $.get("../post.json");
-    alert(post)
+    alert(post);
+    $("#content").appendChild("<div>hhahah</div>")
 </script>
 {% for post in category.last %}
 <div>
