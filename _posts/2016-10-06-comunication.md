@@ -7,7 +7,7 @@ category: Relationship
 
 <h1>{{ page.title }}</h1>
 <p><span class="glyphicon glyphicon-calendar"></span> {{ page.date | date:"%Y年 %m月 %d日" }} Ronnie Wang</p>
-
+<hr/>
 
 沟通的模型跟信息论中信息的传递模型其实是一样的
 

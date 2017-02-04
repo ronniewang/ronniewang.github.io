@@ -5,6 +5,10 @@ description:
 category: Grow-up
 ---
 
+<h1>{{ page.title }}</h1>
+<p><span class="glyphicon glyphicon-calendar"></span> {{ page.date | date:"%Y年 %m月 %d日" }} Ronnie Wang</p>
+<hr/>
+
 意志力就像是血条, 每天早上起来就会充满, 在一天应对各种困难的时候慢慢减少, 最后消失殆尽
 
 意志力是什么呢?

@@ -7,6 +7,7 @@ category: Reading
 
 <h1>{{ page.title }}</h1>
 <p><span class="glyphicon glyphicon-calendar"></span> {{ page.date | date:"%Y年 %m月 %d日" }} Ronnie Wang</p>
+<hr/>
 
 # 技术书籍
 

@@ -7,6 +7,7 @@ description: 运动是永恒的话题, 人人都知道运动的重要性, 但是
 
 <h1>{{ page.title }}</h1>
 <p><span class="glyphicon glyphicon-calendar"></span> {{ page.date | date:"%Y年 %m月 %d日" }} Ronnie Wang</p>
+<hr/>
 
 近两年, 肠胃一直不是很好, 每天晚上回到家里半死不活的状态, 吃完饭就胃肠难受, 去医院看了两次都说没什么事, 但是我感受到的痛苦是真实存在的啊
 
