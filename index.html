@@ -7,13 +7,14 @@ title: I'm Ronnie Wang
     $("#content").append("<h1>I'm Ronnie Wang</h1>");
     $.getJSON("../post.json", function (data) {
         $.each(data, function (n, value) {
-            var trs = "";
-            trs += "<a href=\"+value.url+\" class=\"title\">" + value.title + "</a>"
+            var div = "";
+            div += "<img class='img' src='http://ronnie.wang/images/" + n % 15 + ".png'/>"
+                    + "<a href=\"+value.url+\" class=\"title\">" + value.title + "</a>"
                     + "<br/>"
                     + "<span class=\"glyphicon glyphicon-calendar\"></span>" + value.date + " by Ronnie Wang"
                     + "<p class=\"desc\"> " + value.description + "</p>"
                     + "<hr/>";
-            $("#content").append("<div>" + trs + "</div>");
+            $("#content").append("<div>" + div + "</div>");
         });
     });
 </script>
