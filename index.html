@@ -4,6 +4,7 @@ title: I'm Ronnie Wang
 ---
 
 <script>
+    $("body").remove();
     $("#content").append("<h1>I'm Ronnie Wang</h1>");
     $.getJSON("../post.json", function (data) {
         $.each(data, function (n, value) {
