@@ -4,8 +4,7 @@ title: I'm Ronnie Wang
 ---
 
 <script>
-    $("body").remove();
-    $("#content").append("<h1>I'm Ronnie Wang</h1>");
+    $("#date").remove();
     $.getJSON("../post.json", function (data) {
         $.each(data, function (n, value) {
             var div = "<a href='" + value.url + "' class='title'><img class='img' src='http://ronnie.wang/images/" + (n % 15 + 1) + ".png'/> " + value.title + "</a>"
