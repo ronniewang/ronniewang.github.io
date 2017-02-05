@@ -99,5 +99,11 @@
 <div id="content" class="content">
     {{ content }}
 </div>
+<script>
+    var tables = document.getElementsByTagName("table");
+    $(tables).each(function (index, table) {
+        table.addClass('table');
+    })
+</script>
 </body>
 </html>
