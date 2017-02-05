@@ -105,6 +105,11 @@
 <!--</div>&lt;!&ndash; /.container-fluid &ndash;&gt;-->
 <!--</nav>-->
 <div id="content" class="content">
+
+    <h1>{{ page.title }}</h1>
+    <p><span class="glyphicon glyphicon-calendar"></span> {{ page.date | date:"%Y年 %m月 %d日" }} Ronnie Wang</p>
+    <hr/>
+
     {{ content }}
 </div>
 </body>
