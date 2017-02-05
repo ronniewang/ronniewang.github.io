@@ -2,11 +2,8 @@
 layout: default
 title: 持续交付
 category: Continuous-Delivery
+description: 用全面的自动化解决软件交付中出现的问题
 ---
-<h1>{{ page.title }}</h1>
-<p>{{ page.date | date_to_string }}</p>
-
-----
 
 # 1. 第一章 软件交付的问题
 

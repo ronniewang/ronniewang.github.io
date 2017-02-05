@@ -5,10 +5,6 @@ description: 天才是天生的吗? 可以通过训练成为天才吗? 专家是
 category: Grow-up
 ---
 
-<h1>{{ page.title }}</h1>
-<p><span class="glyphicon glyphicon-calendar"></span> {{ page.date | date:"%Y年 %m月 %d日" }} Ronnie Wang</p>
-<hr/>
-
 ## 推荐语
 
 所有人都以为“杰出”源于“天赋”，而“天才”却说：

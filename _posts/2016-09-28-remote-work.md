@@ -5,10 +5,6 @@ description: 关于远程工作的一些问题和答案
 category: New-Thought
 ---
 
-<h1>{{ page.title }}</h1>
-<p><span class="glyphicon glyphicon-calendar"></span> {{ page.date | date:"%Y年 %m月 %d日" }} Ronnie Wang</p>
-<hr/>
-
 最近一直在思考远程工作的事情，正好之前记得读过一本关于远程工作的书《重来2：更为简单高效的远程工作方式》，又翻出来重新看了一遍，更加坚定了自己要实现远程工作的信念
 
 下面是我的一点读书笔记

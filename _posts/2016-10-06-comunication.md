@@ -5,10 +5,6 @@ description: 亲密关系如何舒畅沟通, 如何避免冲突升级
 category: Relationship
 ---
 
-<h1>{{ page.title }}</h1>
-<p><span class="glyphicon glyphicon-calendar"></span> {{ page.date | date:"%Y年 %m月 %d日" }} Ronnie Wang</p>
-<hr/>
-
 沟通的模型跟信息论中信息的传递模型其实是一样的
 
 传递者的意图===信道(噪音干扰, 传递者的编码特点)===>传递者的行为===信道(噪音干扰, 接受者的解码特点)===>对接受者的影响

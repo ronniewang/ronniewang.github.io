@@ -5,10 +5,6 @@ description: 经验并不等于工作时间
 category: My-Thought
 ---
 
-<h1>{{ page.title }}</h1>
-<p><span class="glyphicon glyphicon-calendar"></span> {{ page.date | date:"%Y年 %m月 %d日" }} Ronnie Wang</p>
-<hr/>
-
 在招聘网站上, 最多的要求就是有XX年工作经验, 经验就是你所有踩过的坑, 解决的问题, 还有你在这过程中形成的方法论
 
 经验无论对于做什么事情都是宝贵的, 经验最大的帮助就是提高工作效率, 使产品能更快实现, 节省时间成本, 推动产品的快速迭代, 这也是为什么经验丰富的程序员工资要几倍于菜鸟程序员的原因
