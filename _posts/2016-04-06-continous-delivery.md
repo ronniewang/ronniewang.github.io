@@ -444,7 +444,7 @@ Jenkins，CruiseControl，Go，TeamCity等
 
 **一个基本的流水线**
 
-![一个基本的流水线](https://github.com/ronniewang/me/blob/gh-pages/image/deploy-pipeline.jpg)
+![一个基本的流水线](https://ronnie.wang/images/deploy-pipeline.jpg)
 
 ## 5.3. 部署流水线的相关实践
 
