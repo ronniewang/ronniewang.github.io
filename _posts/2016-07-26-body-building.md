@@ -23,7 +23,7 @@ description: 运动是永恒的话题, 人人都知道运动的重要性, 但是
 
 后半段健身计划完成并不是很好, 进入11月以来, 雾霾变多, 天气变冷, 当然主观上也有所松懈, 所以11, 12两个月的健身计划没有认真执行
 
-新的一年就好来临了, [2017的健身计划](https://ronniewang.github.io/body-building/2017/02/02/2017%E5%81%A5%E8%BA%AB%E8%AE%B0%E5%BD%95.html)正式开启
+新的一年就要来临了, [2017的健身计划](https://ronniewang.github.io/body-building/2017/02/02/2017%E5%81%A5%E8%BA%AB%E8%AE%B0%E5%BD%95.html)正式开启
 
 ### 12-14
 
