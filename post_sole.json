@@ -3,7 +3,7 @@ layout: nil
 ---
 
 [
-{% for post in site.categories.heart %}
+{% for post in site.categories.sole %}
 {
   "title": "{{post.title}}",
   "url": "{{site.url}}{{post.url}}",
