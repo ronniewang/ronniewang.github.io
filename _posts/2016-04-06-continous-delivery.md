@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 持续交付
-category: Continuous-Delivery
+category: tech
 description: 用全面的自动化解决软件交付中出现的问题
 ---
 

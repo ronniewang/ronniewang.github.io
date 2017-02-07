@@ -2,7 +2,7 @@
 layout: default
 title: 我的书单
 description: 书籍是是人类进步的阶梯, 当然也是我个人成长的利器, 更是我消遣的方式
-category: Reading
+category: sole
 ---
 
 # 技术书籍

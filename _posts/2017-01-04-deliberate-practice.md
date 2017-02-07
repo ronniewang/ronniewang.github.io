@@ -2,7 +2,7 @@
 layout: default
 title: 刻意练习读书笔记
 description: 天才是天生的吗? 可以通过训练成为天才吗? 专家是怎么思考的? 一万小时理论到底对不对? 本书将给你答案
-category: Grow-up
+category: heart
 ---
 
 ## 推荐语

@@ -4,6 +4,19 @@ title: I'm Ronnie Wang
 ---
 
 <script>
+    function change_nav(json_file) {
+        $.getJSON("../" + json_file + ".json", function (data) {
+            $("#content").html("");
+            $.each(data, function (n, value) {
+                var div = "<a href='" + value.url + "' class='title'><img class='img' src='http://ronnie.wang/images/" + (n % 15 + 1) + ".png'/> " + value.title + "</a>"
+                        + "<br/>"
+                        + "<span class='glyphicon glyphicon-calendar'></span>" + value.date + " by Ronnie Wang"
+                        + "<p class='desc'> " + value.description + "</p>"
+                        + "<hr/>";
+                $("#content").append("<div>" + div + "</div>");
+            });
+        });
+    }
     $(function () {
         $("#date").remove();
         $("#post_title").remove();
@@ -18,17 +31,16 @@ title: I'm Ronnie Wang
             });
         });
         $("#nav_body").click(function () {
-            $.getJSON("../post_body.json", function (data) {
-                $("#content").html("");
-                $.each(data, function (n, value) {
-                    var div = "<a href='" + value.url + "' class='title'><img class='img' src='http://ronnie.wang/images/" + (n % 15 + 1) + ".png'/> " + value.title + "</a>"
-                            + "<br/>"
-                            + "<span class='glyphicon glyphicon-calendar'></span>" + value.date + " by Ronnie Wang"
-                            + "<p class='desc'> " + value.description + "</p>"
-                            + "<hr/>";
-                    $("#content").append("<div>" + div + "</div>");
-                });
-            });
+            change_nav("post_body");
+        });
+        $("#nav_heart").click(function () {
+            change_nav("post_heart");
+        });
+        $("#nav_sole").click(function () {
+            change_nav("post_sole");
+        });
+        $("#nav_tech").click(function () {
+            change_nav("post_tech");
         });
     });
 </script>

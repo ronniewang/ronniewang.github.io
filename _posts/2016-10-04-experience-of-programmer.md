@@ -2,7 +2,7 @@
 layout: default
 title: 关于程序员的经验
 description: 经验并不等于工作时间
-category: My-Thought
+category: sole
 ---
 
 在招聘网站上, 最多的要求就是有XX年工作经验, 经验就是你所有踩过的坑, 解决的问题, 还有你在这过程中形成的方法论

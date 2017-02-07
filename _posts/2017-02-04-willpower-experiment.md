@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 意志力实验记录
-category: Willpower
+category: heart
 description: 意志力很宝贵, 用着用着就没了, 有什么办法能提升意志力呢
 ---
 

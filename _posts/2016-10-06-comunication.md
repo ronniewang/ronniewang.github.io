@@ -2,7 +2,7 @@
 layout: default
 title: 沟通
 description: 亲密关系如何舒畅沟通, 如何避免冲突升级
-category: Relationship
+category: heart
 ---
 
 沟通的模型跟信息论中信息的传递模型其实是一样的

@@ -1,0 +1,16 @@
+---
+layout: nil
+---
+
+[
+{% for post in site.categories.heart %}
+{
+  "title": "{{post.title}}",
+  "url": "{{site.url}}{{post.url}}",
+  "date": "{{ post.date | date:'%Y-%m-%d' }}",
+  "category": "{{post.category}}",
+  "description": "{{post.description}}"
+}
+{% if forloop.last == false %}, {% endif %}
+{% endfor %}
+]

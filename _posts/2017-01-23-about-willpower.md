@@ -2,7 +2,7 @@
 layout: default
 title: 关于意志力
 description: 如今社会, 节奏快, 压力大, 到处需要意志力控制自己的行为, 意志力本质是什么, 怎么训练意志力
-category: Grow-up
+category: heart
 ---
 
 本文总结自[《自控力》](https://book.douban.com/subject/10786473/)一书, 作者是凯利·麦格尼格尔
