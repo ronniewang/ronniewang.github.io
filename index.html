@@ -18,7 +18,17 @@ title: I'm Ronnie Wang
             });
         });
         $("#nav_body").click(function () {
-           alert("click body");
+            $.getJSON("../post_body.json", function (data) {
+                $("#content").html("");
+                $.each(data, function (n, value) {
+                    var div = "<a href='" + value.url + "' class='title'><img class='img' src='http://ronnie.wang/images/" + (n % 15 + 1) + ".png'/> " + value.title + "</a>"
+                            + "<br/>"
+                            + "<span class='glyphicon glyphicon-calendar'></span>" + value.date + " by Ronnie Wang"
+                            + "<p class='desc'> " + value.description + "</p>"
+                            + "<hr/>";
+                    $("#content").append("<div>" + div + "</div>");
+                });
+            });
         });
     });
 </script>
