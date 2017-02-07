@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 健身理论和常见问题
-category: Body-Building
+category: body
 description: 持续有效的健身, 不盲目, 不冒进
 ---
 

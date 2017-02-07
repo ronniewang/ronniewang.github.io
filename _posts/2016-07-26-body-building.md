@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 程序员的健身之路
-category: Body-Building
+category: body
 description: 运动是永恒的话题, 人人都知道运动的重要性, 但是很多人都是身体出了问题才真正体会到这个道理的, 但是还不算晚, 只要有所行动, 坚持住, 还是可以重拾健康的
 ---
 
