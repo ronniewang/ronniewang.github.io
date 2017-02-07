@@ -4,15 +4,18 @@ title: I'm Ronnie Wang
 ---
 
 <script>
-    $("#date").remove();
-    $.getJSON("../post.json", function (data) {
-        $.each(data, function (n, value) {
-            var div = "<a href='" + value.url + "' class='title'><img class='img' src='http://ronnie.wang/images/" + (n % 15 + 1) + ".png'/> " + value.title + "</a>"
-                    + "<br/>"
-                    + "<span class='glyphicon glyphicon-calendar'></span>" + value.date + " by Ronnie Wang"
-                    + "<p class='desc'> " + value.description + "</p>"
-                    + "<hr/>";
-            $("#content").append("<div>" + div + "</div>");
+    $(function () {
+        $("#date").remove();
+        $("#post_title").remove();
+        $.getJSON("../post.json", function (data) {
+            $.each(data, function (n, value) {
+                var div = "<a href='" + value.url + "' class='title'><img class='img' src='http://ronnie.wang/images/" + (n % 15 + 1) + ".png'/> " + value.title + "</a>"
+                        + "<br/>"
+                        + "<span class='glyphicon glyphicon-calendar'></span>" + value.date + " by Ronnie Wang"
+                        + "<p class='desc'> " + value.description + "</p>"
+                        + "<hr/>";
+                $("#content").append("<div>" + div + "</div>");
+            });
         });
     });
 </script>
