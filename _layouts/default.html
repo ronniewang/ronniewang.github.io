@@ -7,10 +7,35 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script>
+        function change_nav(json_file) {
+            $.getJSON("../" + json_file + ".json", function (data) {
+                $("#content").html("");
+                $.each(data, function (n, value) {
+                    var div = "<a href='" + value.url + "' class='title'><img class='img' src='http://ronnie.wang/images/" + (n % 15 + 1) + ".png'/> " + value.title + "</a>"
+                            + "<br/>"
+                            + "<span class='glyphicon glyphicon-calendar'></span>" + value.date + " by Ronnie Wang"
+                            + "<p class='desc'> " + value.description + "</p>"
+                            + "<hr/>";
+                    $("#content").append("<div>" + div + "</div>");
+                });
+            });
+        }
         $(function () {
             var tables = document.getElementsByTagName("table");
             $(tables).each(function (index, table) {
                 $(table).attr('class', 'table');
+            });
+            $("#nav_body").click(function () {
+                change_nav("post_body");
+            });
+            $("#nav_heart").click(function () {
+                change_nav("post_heart");
+            });
+            $("#nav_sole").click(function () {
+                change_nav("post_sole");
+            });
+            $("#nav_tech").click(function () {
+                change_nav("post_tech");
             });
         });
     </script>
