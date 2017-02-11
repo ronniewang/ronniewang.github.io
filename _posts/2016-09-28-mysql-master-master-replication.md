@@ -177,7 +177,9 @@ DROP TABLE dummy;
 
 回到Server C上， show tables，发现没有了
 
+```
 Empty set (0.00 sec)
+```
 
 至此，配置完毕
 
