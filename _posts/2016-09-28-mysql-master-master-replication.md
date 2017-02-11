@@ -157,12 +157,14 @@ show tables in example;
 
 输出如下
 
+```
 +-------------------+  
 | Tables_in_example |  
 +-------------------+  
 | dummy             |  
 +-------------------+  
 1 row in set (0.00 sec)
+```
 
 下面我们在Server D上删除这个表
 
