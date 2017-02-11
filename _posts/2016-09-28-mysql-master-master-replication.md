@@ -5,8 +5,6 @@ description: 配置MySQL Master-Master复制, 提高数据安全性和服务高�
 category: tech
 ---
 
-配置MySQL Master-Master复制
-
 ## 概述
 
 我们要在两台主机上设置Mysql双主复制架构，假设两台服务器分别为Server C和Server D
