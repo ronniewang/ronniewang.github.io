@@ -46,7 +46,9 @@ binlog_do_db = example
 
 现在，重启Mysql
 
+```
 sudo systemctl restart mysqld
+```
 
 以root用户登录
 
