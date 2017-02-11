@@ -2,7 +2,7 @@
 layout: default
 title: 配置MySQL Master-Master复制
 description: 配置MySQL Master-Master复制, 提高数据安全性和服务高可用性
-category: sole
+category: tech
 ---
 
 配置MySQL Master-Master复制
