@@ -76,14 +76,13 @@ show master status;
 
 下面的输出在配置Server D的时候要用到
 
-```
 +------------------+----------+--------------+------------------+
-| File            | Position | Binlog_Do_DB | Binlog_Ignore_DB |
+| File             | Position | Binlog_Do_DB | Binlog_Ignore_DB |
 +------------------+----------+--------------+------------------+
 | mysql-bin.000001 |      120 | example      |                  |
 +------------------+----------+--------------+------------------+
 1 row in set (0.00 sec)
-```
+
 
 ### Step 2 - 为Server D安装和配置Mysql
 
@@ -112,7 +111,7 @@ SHOW MASTER STATUS;
 输出类似这样的
 
 +------------------+----------+--------------+------------------+
-| File            | Position | Binlog_Do_DB | Binlog_Ignore_DB |
+| File             | Position | Binlog_Do_DB | Binlog_Ignore_DB |
 +------------------+----------+--------------+------------------+
 | mysql-bin.000004 |      107 | example      |                  |
 +------------------+----------+--------------+------------------+
@@ -159,7 +158,7 @@ show tables in example;
 +-------------------+
 | Tables_in_example |
 +-------------------+
-| dummy            |
+| dummy             |
 +-------------------+
 1 row in set (0.00 sec)
 
