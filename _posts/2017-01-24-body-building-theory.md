@@ -113,5 +113,6 @@ description: 持续有效的健身, 不盲目, 不冒进
 
 ## 5. 参考文献
 
-* 三大供能系统 
+* 三大供能系统 <https://zhuanlan.zhihu.com/p/19915080?columnSlug=jszxs>
 * 《四周练出一身肌肉》 <https://book.douban.com/subject/19980140/>
+* 《硬派健身》 <https://book.douban.com/subject/26359758/>
