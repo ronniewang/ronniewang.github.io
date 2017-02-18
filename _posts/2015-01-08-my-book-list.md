@@ -27,6 +27,7 @@ category: sole
 
 * 《TCP/I协议详解》
 * 《编码》
+* 《从Paxos到Zookeeper分布式一致性原理与实践》
 
 ## 最佳实践
 
