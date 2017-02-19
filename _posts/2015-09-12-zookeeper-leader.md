@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Zookeeper的leader选举过程
+category: tech
 description: Zookeeper的leader选举过程分为两种, 启动期选举和运行期选举
 ---
 
