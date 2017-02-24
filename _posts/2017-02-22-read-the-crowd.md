@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 读《乌合之众》英文版
-category: Reading
+category: Sole
 description: 一定要学好英语, 就从一本英文原著开始吧
 ---
 
@@ -73,6 +73,5 @@ description: 一定要学好英语, 就从一本英文原著开始吧
 * superpose
 * allude
 * first of all首先 after all 毕竟
-* 
 
-难句
+### 2017-02-25
