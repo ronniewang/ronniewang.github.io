@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 读《乌合之众》英文版
-category: Sole
+category: sole
 description: 一定要学好英语, 就从一本英文原著开始吧
 ---
 
