@@ -46,7 +46,7 @@ Please select the redis port for this instance: [6379]
 ```
 Please select the redis config file name [/etc/redis/6379.conf] 
 ```
-输入`/etc/redis/redis_6379.conf`，回车
+输入`/etc/redis/redis_6379.conf`，作为新的配置文件，回车
 
 ```
 Please select the redis log file name [/var/log/redis_6379.log]
