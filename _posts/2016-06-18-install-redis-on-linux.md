@@ -120,8 +120,7 @@ ok，没问题，至此，安装成功
 
 ### 2.1. 环境
 
-Redis Version：current stable
-OS：CentOS 7
+同上
 
 ### 2.2. 目标
 
