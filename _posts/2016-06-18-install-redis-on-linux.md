@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 在Linux上安装Redis
+title: Redis的高可用
 description: Redis是最流行的Key-Value存储, 学会安装和使用Redis已经是必备技能
 category: tech
 ---
