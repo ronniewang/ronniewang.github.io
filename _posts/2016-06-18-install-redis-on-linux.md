@@ -7,7 +7,7 @@ category: tech
 
 ## 环境
 
-Redis Version：3.0.1及以上
+Redis Version：3.0.1及以上  
 OS：Centos 7
 
 ## 步骤
