@@ -5,14 +5,15 @@ description: Redis是最流行的Key-Value存储, 学会安装和使用Redis已�
 category: tech
 ---
 
-## 1. 环境
+## 1. 在Linux上安装Redis
+### 1.1 环境
 
 Redis Version：3.0.1及以上  
 OS：CentOS 7
 
-## 2. 步骤
+### 1.2. 步骤
 
-### 2.1. 下载到指定目录并解压
+#### 1.2.1. 下载到指定目录并解压
 
 ```
 > cd /usr/src
@@ -20,7 +21,7 @@ OS：CentOS 7
 > tar xvzf redis-stable.tar.gz
 ```
 
-### 2.2. 构建
+#### 1.2.2. 构建
 
 ```
 > cd redis-stable
@@ -30,7 +31,7 @@ OS：CentOS 7
 如果由于没有安装gcc导致make报错，在安装make之后重新构建可能会报jemalloc/jemalloc.h相关错误，可参考
 <http://unix.stackexchange.com/questions/94479/jemalloc-and-other-errors-making-redis-on-centos-6-4>进行修复
 
-### 2.3. 运行安装脚本
+#### 1.2.3. 运行安装脚本
 
 ```
 > utils/install_server.sh
@@ -39,7 +40,7 @@ OS：CentOS 7
 脚本会有一系列引导
 
 ```
-Please select the redis port for this instance: [6379]
+Please select the redis port for this` instance: [6379]
 ```
 回车选择6379作为默认端口
 
@@ -85,7 +86,7 @@ Installation successful!
 ```
 安装成功
 
-### 2.4. 验证是否安装成功
+#### 1.2.4. 验证是否安装成功
 
 ```
 > /etc/init.d/redis_6379 status
@@ -114,3 +115,131 @@ OK
 ```
 
 ok，没问题，至此，安装成功
+
+## 2. Redis的主从配置
+
+### 2.1. 环境
+
+Redis Version：current stable
+OS：CentOS 7
+
+### 2.2. 目标
+
+在此，我们启动两个redis进程，一个作为master，一个作为slave，分别运行在6379和6380端口
+
+Master相关配置如下
+```
+port 6379
+配置文件 /etc/redis/redis_6379.conf
+启动脚本 /etc/init.d/redis_6379
+```
+
+Slave相关配置如下
+```
+port 6380
+配置文件 /etc/redis/redis_6380.conf
+启动脚本 /etc/init.d/redis_6380
+```
+
+## 2.3. 步骤
+
+在`/etc/redis/redis_6380.conf`文件中增加下面几行
+
+```
+# slaveof <masterip> <masterport>
+slaveof localhost 6379
+# setting a slave to authenicate to a master
+masterauth mypass
+```
+
+为master增加密码，在`/etc/redis/redis/redis_6379.conf`中加入下面一行
+```
+requirepass mypass
+```
+
+重启两个Redis实例
+
+```
+/etc/init.d/redis_6379 stop/start
+/etc/init.d/redis_6380 stop/start
+```
+
+还可以不重启实例来修改权限和主从信息，通过Redis命令实现
+
+```
+redis-cli -p 6379 config set requirepass mypass
+redis-cli -p 6380 config set masterauth mypass
+redis-cli -p 6380 SLAVEOF localhost 6379
+```
+
+查看replication信息
+
+```
+redis-cli -p 6379 -a mypass info replication
+```
+
+输出如下
+
+```
+# Replication
+role:master
+connected_slaves:1
+slave0:ip=127.0.0.1,port=6380,state=online,offset=3963,lag=1
+master_repl_offset:3963
+repl_backlog_active:1
+repl_backlog_size:1048576
+repl_backlog_first_byte_offset:2
+repl_backlog_histlen:3962
+```
+输出说明6379是master
+
+```
+redis-cli -p 6380 info replication
+```
+
+输出如下
+
+```
+# Replication
+role:slave
+master_host:localhost
+master_port:6379
+master_link_status:up
+master_last_io_seconds_ago:6
+master_sync_in_progress:0
+slave_repl_offset:3977
+slave_priority:100
+slave_read_only:1
+connected_slaves:0
+master_repl_offset:0
+repl_backlog_active:0
+repl_backlog_size:1048576
+repl_backlog_first_byte_offset:0
+repl_backlog_histlen:0
+```
+
+输出说明6380是6379的slave
+
+可以通过下面的命令取消6380的slave信息
+
+```
+redis-cli -p 6380 slaveof no one
+OK
+```
+
+查看一下replication信息
+
+```
+redis-cli -p 6380 info replication
+```
+
+```
+# Replication
+role:master
+connected_slaves:0
+master_repl_offset:4215
+repl_backlog_active:0
+repl_backlog_size:1048576
+repl_backlog_first_byte_offset:0
+repl_backlog_histlen:0
+```
