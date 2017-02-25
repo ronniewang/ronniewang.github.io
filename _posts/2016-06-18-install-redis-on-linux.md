@@ -5,14 +5,14 @@ description: Redis是最流行的Key-Value存储, 学会安装和使用Redis已�
 category: tech
 ---
 
-## 环境
+## 1. 环境
 
 Redis Version：3.0.1及以上  
 OS：CentOS 7
 
-## 步骤
+## 2. 步骤
 
-### 1. 下载到指定目录并解压
+### 2.1. 下载到指定目录并解压
 
 ```
 > cd /usr/src
@@ -20,7 +20,7 @@ OS：CentOS 7
 > tar xvzf redis-stable.tar.gz
 ```
 
-### 2. 构建
+### 2.2. 构建
 
 ```
 > cd redis-stable
@@ -30,7 +30,7 @@ OS：CentOS 7
 如果由于没有安装gcc导致make报错，在安装make之后重新构建可能会报jemalloc/jemalloc.h相关错误，可参考
 <http://unix.stackexchange.com/questions/94479/jemalloc-and-other-errors-making-redis-on-centos-6-4>进行修复
 
-### 3. 运行安装脚本
+### 2.3. 运行安装脚本
 
 ```
 > utils/install_server.sh
@@ -85,7 +85,7 @@ Installation successful!
 ```
 安装成功
 
-### 4. 验证是否安装成功
+### 2.4. 验证是否安装成功
 
 ```
 > /etc/init.d/redis_6379 status
