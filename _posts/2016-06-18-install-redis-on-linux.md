@@ -5,6 +5,12 @@ description: Redis是最流行的Key-Value存储, 学会安装和使用Redis已�
 category: tech
 ---
 
+Redis是最流行的Key-Value存储, 学会安装和使用Redis已经是必备技能, 本文将介绍三个方面
+
+* 在Linux上安装Redis
+* Redis的主从配置
+* 使用Haproxy和Sentinel实现Redis的高可用
+
 ## 1. 在Linux上安装Redis
 ### 1.1 环境
 
