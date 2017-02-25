@@ -148,7 +148,7 @@ port 6380
 
 ## 2.3. 步骤
 
-在`/etc/redis/redis_6380.conf`文件中增加下面几行
+### 2.3.1. 在`/etc/redis/redis_6380.conf`文件中增加下面几行
 
 ```
 # slaveof <masterip> <masterport>
@@ -157,12 +157,13 @@ slaveof localhost 6379
 masterauth mypass
 ```
 
-为master增加密码，在`/etc/redis/redis/redis_6379.conf`中加入下面一行
+### 2.3.2. 为master增加密码，在`/etc/redis/redis/redis_6379.conf`中加入下面一行
+
 ```
 requirepass mypass
 ```
 
-重启两个Redis实例
+### 2.3.3. 重启两个Redis实例
 
 ```
 /etc/init.d/redis_6379 stop/start
@@ -177,7 +178,7 @@ redis-cli -p 6380 config set masterauth mypass
 redis-cli -p 6380 SLAVEOF localhost 6379
 ```
 
-查看replication信息
+### 2.3.4. 查看replication信息
 
 ```
 redis-cli -p 6379 -a mypass info replication
