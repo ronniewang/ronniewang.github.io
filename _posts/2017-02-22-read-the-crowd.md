@@ -10,7 +10,7 @@ description: 一定要学好英语, 就从一本英文原著开始吧
 
 ### 2017-02-22
 
-生词
+生词 9
 
 * constitute
 * agglomeration
@@ -24,7 +24,7 @@ description: 一定要学好英语, 就从一本英文原著开始吧
 
 ### 2017-02-23
 
-生词
+生词 37
 
 * predisposing causes
 * determine the nature
@@ -51,7 +51,7 @@ description: 一定要学好英语, 就从一本英文原著开始吧
 * intensity
 * present itself
 * traverse
-* uniformity
+* **uniformity** If there is uniformity in something such as a system, organization, or group of countries, the same rules, ideas, or methods are applied in all parts of it.
 * apparent
 * elsewhere
 * manifest
@@ -65,13 +65,14 @@ description: 一定要学好英语, 就从一本英文原著开始吧
 
 ### 2017-02-24
 
-生词
+生词 6
 
 * successive
 * attain
 * invariably = always
-* superpose
+* superpose 叠加, 重叠
 * allude
 * first of all首先 after all 毕竟
 
 ### 2017-02-25
+
