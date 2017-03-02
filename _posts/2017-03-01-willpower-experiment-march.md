@@ -24,3 +24,39 @@ description: 意志力很宝贵, 用着用着就没了, 有什么办法能提升
 以下为每日记录，先记录一个月，然后月底做一个总结
 
 ### 2017-03-01
+
+* vinegar
+* striking
+* sodium
+* soak
+* set out
+* servant
+* punctuation
+* procure
+* premature
+* pitfall
+* pharmacist
+
+### 2017-03-02
+
+* optimism
+* on the off chance
+* obviate
+* leaflet
+* intrinsically
+* interior
+* inoffensive
+* in possession of
+* impersonate
+* glamour
+* folk
+* docile
+* disruptive
+* determination
+* discretion
+* demise
+* close-up
+* campaign
+* bequeath
+* amongst
+* a handful of
