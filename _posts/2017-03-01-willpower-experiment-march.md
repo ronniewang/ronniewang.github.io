@@ -68,4 +68,13 @@ description: 意志力很宝贵, 用着用着就没了, 有什么办法能提升
 
 * `stencil`
 * `competence` = competency Competence is a ability to do something well or effectively
+* `metaphor`
+* `jargon`
+* `slang`
+* `gloss`
+* `gloss over`
+* `on behalf of` 为了...的利益
+* `durability`
+* `parlance` You use parlance when indicating that the expression that you are using is normally used by a particular
+ group of people
 * 
