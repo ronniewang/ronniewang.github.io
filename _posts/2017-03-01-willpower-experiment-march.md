@@ -25,38 +25,47 @@ description: 意志力很宝贵, 用着用着就没了, 有什么办法能提升
 
 ### 2017-03-01
 
-* vinegar
-* striking
-* sodium
-* soak
-* set out
-* servant
-* punctuation
-* procure
-* premature
-* pitfall
-* pharmacist
+* `vinegar`
+* `striking`
+* `sodium`
+* `soak`
+* `set out`
+* `servant`
+* `punctuation`
+* `procure`
+* `premature`
+* `pitfall`
+* `pharmacist`
 
 ### 2017-03-02
 
-* optimism
-* on the off chance
-* obviate
-* leaflet
-* intrinsically
-* interior
-* inoffensive
-* in possession of
-* impersonate
-* glamour
-* folk
-* docile
-* disruptive
-* determination
-* discretion
-* demise
-* close-up
-* campaign
-* bequeath
-* amongst
-* a handful of
+* `optimism`
+* `on the off chance`
+* `obviate`
+* `leaflet`
+* `intrinsically`
+* `interior`
+* `inoffensive`
+* `in possession of`
+* `impersonate`
+* `glamour`
+
+### 2017-03-03
+
+* `folk`
+* `docile`
+* `disruptive`
+* `determination`
+* `discretion`
+* `demise`
+* `close-up`
+* `campaign`
+* `bequeath`
+* `amongst`
+* `a handful of`
+
+### 2017-03-04
+
+* `stencil`
+* `competence` = competency Competence is a ability to do something well or effectively
+* 
