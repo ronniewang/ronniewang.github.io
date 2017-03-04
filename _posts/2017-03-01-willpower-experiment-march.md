@@ -77,4 +77,3 @@ description: 意志力很宝贵, 用着用着就没了, 有什么办法能提升
 * `durability`
 * `parlance` You use parlance when indicating that the expression that you are using is normally used by a particular
  group of people
-* 
