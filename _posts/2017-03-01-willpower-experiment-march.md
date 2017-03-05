@@ -77,3 +77,18 @@ description: 意志力很宝贵, 用着用着就没了, 有什么办法能提升
 * `durability`
 * `parlance` You use parlance when indicating that the expression that you are using is normally used by a particular
  group of people
+
+### 2017-03-05
+
+<http://lifehacker.com/three-ways-to-raise-your-confidence-1792836603>
+
+* `elusive` Something or someone that is elusive is difficult to find, describe, remember, or achieve
+* `overnight`
+* `bass`
+* `assuredness`
+* `in spite of` 表转折 Belief is a powerful thing. If you feel doubt, try listening to music with deep bass or doing power poses to fake a little more assuredness and continue to push yourself in spite of doubt.
+* `diligent`
+* `setback`
+* `trip and fall`
+* `strive` keep striving
+* `inspiration`
