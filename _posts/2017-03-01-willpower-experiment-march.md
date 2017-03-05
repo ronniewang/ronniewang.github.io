@@ -92,3 +92,5 @@ description: 意志力很宝贵, 用着用着就没了, 有什么办法能提升
 * `trip and fall`
 * `strive` keep striving
 * `inspiration`
+* `meditate`
+* `meditation`
