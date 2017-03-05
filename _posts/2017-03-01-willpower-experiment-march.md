@@ -95,3 +95,4 @@ description: 意志力很宝贵, 用着用着就没了, 有什么办法能提升
 * `meditate`
 * `meditation`
 * `mindfulness`
+* `embark` Our goal is to provide additional support as you embark on a path to bring mindfulness and meditation into your life
