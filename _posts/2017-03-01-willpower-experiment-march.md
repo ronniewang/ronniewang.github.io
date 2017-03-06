@@ -96,3 +96,21 @@ description: 意志力很宝贵, 用着用着就没了, 有什么办法能提升
 * `meditation`
 * `mindfulness`
 * `embark` Our goal is to provide additional support as you embark on a path to bring mindfulness and meditation into your life
+* `nudge`
+
+### 2017-03-06
+
+* `stain` A stain is a mark on something that is difficult to remove. If a liquid stains something, the thing becomes
+ coloured or marked by the liquid.
+* `in no time`
+* `dynamo`
+* `eventually`
+* `patent`
+* `delight`
+* `compliment`
+* `contaminate`
+* `artifical` AI
+* `pending`
+* `consensus`
+* `discard`
+  
