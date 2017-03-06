@@ -5,13 +5,13 @@ description: 不小心写了个bug, 两个字段值入库的时候写反了, 得
 category: tech
 ---
 
-1. 创建一个测试的表
+创建一个测试的表
 
 ```
 create table test_swap(x char(10), y char(10));
 ```
 
-2. 插入几条数据
+插入几条数据
 
 ```
 insert into test_swap values('x1', 'y1'), ('x2', 'y2'), ('x3', null), (null, 'y4');
@@ -37,7 +37,7 @@ select * from test_swap;
 4 rows in set (0.00 sec)
 ```
 
-3. 执行交换语句
+执行交换语句
 
 ```
 update test_swap set x=(@t:=x), x=y, y=@t;
@@ -63,7 +63,7 @@ select * from test_swap;
 4 rows in set (0.00 sec)
 ```
 
-4. 交换成功
+交换成功
 
 参考文档
 
