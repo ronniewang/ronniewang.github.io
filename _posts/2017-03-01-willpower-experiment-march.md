@@ -113,4 +113,41 @@ description: 意志力很宝贵, 用着用着就没了, 有什么办法能提升
 * `pending`
 * `consensus`
 * `discard`
-  
+
+### 2017-03-07
+
+* `allergy`
+* `dialer`
+* `spouse`
+* `medication`
+* `obese`
+* `vital`
+* `pulse`
+* `oximeter`
+* `oxygen`
+* `footprint`
+
+### 2017-03-08
+
+今天太累, 没看任何英语
+
+### 2017-03-09
+
+* `overwhelm`   
+If you are overwhelmed by a feeling or event, it affects you very strongly, and you do not know how to deal with it.  
+ If a group of people overwhelm a place or another group, they gain complete control or victory over them.
+* `disclosure`  
+Disclosure is the act of giving people new or secret information.
+* `recognizer`
+* `zoom in`
+* `pronounced` = noticeable  
+Something that is noticeable is very obvious, so that it is easy to see, hear, or recognize
+* `periodically`  
+Periodical events or situations happen occasionally, at fairly regular intervals.
+* `occasionally`  
+Occasional means happening sometimes, but not regularly or often.
+* `shrink` 缩小, 减少, 逃避
+* `stretch` 伸展
+* `misplaced`
+* `exclamation` exclamation point !
+* `appointment`
