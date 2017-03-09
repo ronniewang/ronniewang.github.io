@@ -135,7 +135,7 @@ description: 意志力很宝贵, 用着用着就没了, 有什么办法能提升
 
 * `overwhelm`   
 If you are overwhelmed by a feeling or event, it affects you very strongly, and you do not know how to deal with it.  
- If a group of people overwhelm a place or another group, they gain complete control or victory over them.
+If a group of people overwhelm a place or another group, they gain complete control or victory over them.
 * `disclosure`  
 Disclosure is the act of giving people new or secret information.
 * `recognizer`
