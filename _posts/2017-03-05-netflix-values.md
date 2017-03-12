@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Netflix Values
-category: body
+category: sole
 description: about Netflix values
 ---
 
