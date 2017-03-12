@@ -151,3 +151,31 @@ Occasional means happening sometimes, but not regularly or often.
 * `misplaced`
 * `exclamation` exclamation point !
 * `appointment`
+
+### 2017-03-10
+
+* `by the time` 到...时候
+* `impending`  
+An impending event is one that is going to happen very soon.
+* `resign`
+* `anticipate`  
+If you anticipate an event, you realize in advance that it may happen and you are prepared for it.  
+If you anticipate a question, request, or need, you do what is necessary or required before the question, request, or need occurs.
+* `nuanced`
+* `pinch`
+* `trait`  
+A trait is a particular characteristic, quality, or tendency that someone or something has.
+* `portfolio`
+* `withdraw`
+* `deposit`
+
+### 2017-03-11
+
+* `succinct`  
+Something that is succinct expresses facts or ideas clearly and in few words.
+* `adequately`  
+If something is adequate, there is enough of it or it is good enough to be used or accepted.
+* `by means of` 借助于
+* `in addition to` 除...之外
+* `hereby`  
+You use hereby when officially or formally saying what you are doing.
