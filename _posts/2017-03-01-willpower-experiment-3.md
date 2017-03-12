@@ -179,3 +179,17 @@ If something is adequate, there is enough of it or it is good enough to be used 
 * `in addition to` 除...之外
 * `hereby`  
 You use hereby when officially or formally saying what you are doing.
+* `blush`  
+When you blush, your face becomes redder than usual because you are ashamed or embarrassed
+* `meddle`  
+If you say that someone meddles in something, you are criticizing the fact that they try to influence  or change it 
+without being asked
+* `redeem`  
+If you redeem yourself or your reputation, you do something that makes people have a good opinion of you again after 
+you have behaved or performed badly
+* `lesbian`
+* `scald`  
+If you scald yourself, you burn yourself with very hot liquid or steam(蒸汽).
+
+### 2017-03-12
+
