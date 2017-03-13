@@ -17,6 +17,7 @@ category: sole
 * 《Mysql权威指南》
 * 《Python核心编程》
 * 《Spring实战》
+* 《Hadoop权威指南》
 
 ## 运维
 
