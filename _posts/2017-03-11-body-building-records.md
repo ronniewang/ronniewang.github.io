@@ -1,75 +1,77 @@
----
-layout: default
-title: 2017健身记录
-category: body
-description: 在单独的文件里记录每日训练情况
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Log</title>
+    <script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/angular.js/1.6.3/angular.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
 
-
-## 3. 分次训练记录
-
-### 2017-03-20
-
-**热身**
-
-开合跳 2*15  
-抱头深蹲 2*10  
-半伏地挺身 2*10
-
-**训练**
-
-1a 推进器式 2*8  
-1b 直立杠铃推举 3*10 加了3.6kg的重量 下次可以考虑加大重量了  
-1c 伏地挺身 2*10  
-1d 哑铃剪蹲 2*10  
-1e 爬山式 2*40s  
-1f 附身杠铃划船 1*10 3.6kg
-
-**放松**
-
-泡沫轴滚啊滚
-
-### 2017-03-17
-
-**热身**
-
-开合跳 2*15  
-抱头深蹲 2*10  
-伏地挺身 2*8
-
-**训练**
-
-1a 推进器式 2*8  
-1b 直立杠铃推举 2*10 加了1.6kg的重量  
-1c 伏地挺身 2*10  
-1d 哑铃剪蹲 2*10  
-1e 爬山式 2*30s  
-1f 直立杠铃推举 1*10 加了3.6kg的重量  
-
-**放松**
-
-泡沫轴滚啊滚
-
-### 2017-03-15
-
-骑车 8km
-
-### 2017-03-13
-
-**热身**
-
-开合跳 2*15  
-抱头深蹲 2*10  
-伏地挺身 2*8
-
-**训练**
-
-1a 推进器式 2*8  
-1b 直立杠铃推举 2*10  
-1c 伏地挺身 2*10  
-1d 哑铃剪蹲 1*10  
-1e 爬山式 1*30s
-
-**放松**
-
-泡沫轴滚啊滚
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+<body class="container" ng-app="app" ng-controller="logController">
+<div class="row">
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default" ng-repeat="log in logs">
+            <div class="panel-heading">
+                <h3 class="panel-title">训练日期 <span ng-bind="log.date"></span></h3>
+            </div>
+            <div class="panel-body">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">热身
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                            <li ng-repeat="preheat in log.preheat" ng-bind="preheat"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel panel-info">
+                    <div class="panel-heading">训练
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                            <li ng-repeat="training in log.training" ng-bind="training"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel panel-success">
+                    <div class="panel-heading">放松
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                            <li ng-repeat="relax in log.relax" ng-bind="relax"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="panel panel-warning">
+                    <div class="panel-heading">总结
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                            <li ng-repeat="summary in log.summary" ng-bind="summary"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-footer">Ronnie Wang</div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    var app = angular.module("app", []);
+    app.controller("logController", function ($scope, $http) {
+        $scope.logs = [];
+        $http.get("/body_building_logs.json").then(function (response) {
+            $scope.logs = response.data;
+        }, function (error) {
+            // do nothing
+        });
+    });
+</script>
+</html>
