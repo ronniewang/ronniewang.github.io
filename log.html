@@ -67,7 +67,7 @@
     var app = angular.module("app", []);
     app.controller("logController", function ($scope, $http) {
         $scope.logs = [];
-        $http.get("/logs").then(function (response) {
+        $http.get("/body_building_log.json").then(function (response) {
             $scope.logs = response.data;
         }, function (error) {
             // do nothing
