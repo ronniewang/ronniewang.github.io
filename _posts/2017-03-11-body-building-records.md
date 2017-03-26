@@ -1,3 +1,10 @@
+---
+layout: default
+title: 2017健身记录
+category: body
+description: 在单独的文件里记录每日训练情况
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,7 +74,7 @@
     var app = angular.module("app", []);
     app.controller("logController", function ($scope, $http) {
         $scope.logs = [];
-        $http.get("/body_building_logs.json").then(function (response) {
+        $http.get("/logs").then(function (response) {
             $scope.logs = response.data;
         }, function (error) {
             // do nothing
