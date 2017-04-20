@@ -25,3 +25,10 @@ category: tech
 * -n set interval
 * -t no title
 * -d highlight the difference between successive updates
+
+## wc
+* -l lines
+* -c bytes
+* -w words
+* output: `lines words bytes filename`  
+

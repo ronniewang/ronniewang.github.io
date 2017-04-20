@@ -191,5 +191,11 @@ you have behaved or performed badly
 * `scald`  
 If you scald yourself, you burn yourself with very hot liquid or steam(蒸汽).
 
-### 2017-03-12
+### 2017-04-18
+
+* `edible` If something is edible, it is safe to eat and not poisonous.
+* `craft` the potter's craft  
+Domain Specific Languages (DSLs) are specialized languages carefully crafted to serve one single goal.
+* `proficiency` 精通，熟练  
+
 
