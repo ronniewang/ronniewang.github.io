@@ -1,3 +1,4 @@
 baseurl: /
 markdown: kramdown
-permalink: /:categories/:title.html
+#permalink: /:categories/:title.html
+permalink: /:title.html
