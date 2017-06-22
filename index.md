@@ -31,3 +31,4 @@ title: I'm Ronnie Wang
 目前主要兴趣在心理学, 认知科学等方面, 我的部分书单在[这里](http://ronnie.wang/sole/my-book-list.html)
 
 > 这里的文章会随着我的经验的发展和了解的深入不断更新
+
