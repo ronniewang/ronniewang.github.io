@@ -3,14 +3,7 @@ layout: default
 title: I'm Ronnie Wang
 ---
 
-<script>
-    $(function () {
-        $("#date").remove();
-        $("#post_title").remove();
-    });
-</script>
-
-人呐, 要对得起自己写下的每行代码
+我是一个人呐, 要对得起自己写下的每行代码
 
 不仅要为机器编程, 也要为自己的身体编程, 更要为自己的大脑编程, 让身体更强壮, 让头脑更深刻
 
@@ -32,3 +25,4 @@ title: I'm Ronnie Wang
 
 > 这里的文章会随着我的经验的发展和了解的深入不断更新
 
+[[读书](my-book-list.md)]
