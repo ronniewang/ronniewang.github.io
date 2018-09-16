@@ -11,7 +11,7 @@
             $.getJSON("../" + json_file + ".json", function (data) {
                 $("#content").html("");
                 $.each(data, function (n, value) {
-                    var div = "<a href='" + value.url + "' class='title'><img class='img' src='http://ronnie.wang/images/" + (n % 15 + 1) + ".png'/> " + value.title + "</a>"
+                    var div = "<a href='" + value.url + "' class='title'><img class='img' src='http://ronniewang.github.io/images/" + (n % 15 + 1) + ".png'/> " + value.title + "</a>"
                             + "<br/>"
                             + "<span class='glyphicon glyphicon-calendar'></span>" + value.date + " by Ronnie Wang"
                             + "<p class='desc'> " + value.description + "</p>"
