@@ -1,4 +1,4 @@
-《Effective Java》
+[《Effective Java》](effective-java-catalog.html)
 
 13 使类和成员的可访问性最小化
 
