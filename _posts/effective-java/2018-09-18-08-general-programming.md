@@ -39,8 +39,8 @@ for (Iterator<Suit> i = suits.iterator(); i.hasNext(); )
 
 ## 51 当心字符串连接的性能
 
-* + 时间复杂度是 n^2
-* 使用 StringBuilder 代替 +
+* 加号的时间复杂度是 n^2
+* 使用 StringBuilder 代替加号
 
 ## 52 通过接口引用对象
 
