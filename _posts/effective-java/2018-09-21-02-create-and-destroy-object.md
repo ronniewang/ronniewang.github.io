@@ -9,6 +9,7 @@
    * 不必在每次调用的时候都创建一个新对象
    * 可以返回任何原返回类型的子类型实例
    * 使用参数化类型时代码更简洁，下面是例子，不过 Java7 之后就不用了
+   
 ```java
 public static <K, V> HashMap<K, V> newInstance() {
     return new HashMap<K, V>();
@@ -16,6 +17,7 @@ public static <K, V> HashMap<K, V> newInstance() {
 
 Map<String, List<String>> m = HashMap.newInstance();
 ```
+
 * 缺点
   * 如果不含公有或者受保护的构造器，就不能被子类化
   * 与其他静态方法没有任何区别，可以用特定的命名规范予以区分
