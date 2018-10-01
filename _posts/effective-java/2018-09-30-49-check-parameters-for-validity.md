@@ -1,3 +1,5 @@
+[《Effective Java 3rd Edition》](effective-java-3rd-edition-catalog.html)
+
 本篇有难度的词句（Just for me）
 
 * validity n. [计] 有效性；正确；正确性
@@ -13,7 +15,7 @@
 * an object that violates its class invariants
   * invariant adj. 不变的 n. [数] 不变量；[计] 不变式
 * impractical adj. 不切实际的，不现实的；不能实行的
-* mutually comparable 
+* mutually comparable
   * adv. 互相地；互助
 * Therefore, there would be little point in checking ahead of time that the elements in the list were mutually comparable
   * little point 意义不大
@@ -23,12 +25,12 @@
 * you should use the exception translation idiom
   * idiom n. 成语，习语；土话
 * Do not infer from this item that arbitrary restrictions on parameters are a good thing
-  * infer from 从...中导出 
+  * infer from 从...中导出
 * The modest work that it entails will be paid back with interest the first time a validity check fails
   * modest adj. 谦虚的，谦逊的；适度的；端庄的；羞怯的
   * entail vt. 使需要，必需；承担；遗传给；蕴含 n. 引起；需要；继承
   * pay back with interest 连本带利偿还
-  
+
 # Item 49: Check parameters for validity
 
 Most methods and constructors have some restrictions on what values may be passed into their parameters. For example, it is not uncommon that index values must be non-negative and object references must be non-null. You should clearly document all such restrictions and enforce them with checks at the beginning of the method body. This is a special case of the general principle that you should attempt to detect errors as soon as possible after they occur. Failing to do so makes it less likely that an error will be detected and makes it harder to determine the source of an error once it has been detected.
