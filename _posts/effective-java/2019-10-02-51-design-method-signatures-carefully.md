@@ -15,7 +15,7 @@
 * accidentally adv. 意外地；偶然地
 * orthogonality [,ɔːθɒɡə'nælətɪ] n. [数] 正交性；相互垂直
 * power-to-weight ratio 功率质量比
-*
+
 # 51 Design method signatures carefully
 
 This item is a grab bag of API design hints that don’t quite deserve items of their own. Taken together, they’ll help make your API easier to learn and use and less prone to errors.

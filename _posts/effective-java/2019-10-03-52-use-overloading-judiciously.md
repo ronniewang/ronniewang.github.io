@@ -8,32 +8,32 @@
 * the intent of the program was to discern the type
   * discern vt. 识别；领悟，认识 vi. 看清楚，辨别
 * Because overriding is the norm and overloading is the exception
- * norm
+ * norm n. 标准，规范
 * overloading can easily confound these expectations
- * confound
+ * confound vt. 使混淆；挫败；讨厌；使混乱
 * These errors will likely manifest themselves as erratic behavior at runtime, and many programmers will have a hard time diagnosing them
- * manifest
- * diagnose
+ * manifest vt. 证明，表明；显示 vi. 显示，出现 n. 载货单，货单；旅客名单 adj. 显然的，明显的；明白的
+ * diagnose vt. 诊断；断定 vi. 诊断；判断
 * conservative policy is never to export two overloadings with the same number of parameters
- * conservative
+ * conservative adj. 保守的 n. 保守派，守旧者
 * These restrictions are not terribly onerous
- * onerous
+ * onerous ['ɑnərəs] adj. 繁重的；麻烦的；负有义务的；负有法律责任的
 * radically different
- * radically
+ * radically adv. 根本上；彻底地；以激进的方式`
 * It is an understatement to call this behavior confusing
- * understatement
+ * understatement n. 保守的陈述；不充分的陈述；有保留的陈述
 * this tale makes it clear that autoboxing and generics increased the importance of caution when overloading
  * tale n. 故事；传说；叙述；流言蜚语
 * In the parlance of this item, different functional interfaces are not radically different
- * parlance
+ * parlance n. 说法；用语；语调；发言
 * The Java compiler will warn you about this sort of problematic overload if you pass the command line switch -Xlint:overloads
- * problematic
+ * problematic adj. 问题的；有疑问的；不确定的
 * it becomes very difficult for most programmers to discern which, if any, overloading applies to a set of actual parameters
- * if any
+ * if any 若有的话；即便要
 * It is generally best to refrain from overloading methods with multiple signatures that have the same number of parameters
- * refrain
+ * refrain vi. 节制，克制；避免；制止 n. 叠句，副歌；重复
 * you are retrofitting an existing class to implement a new interface
- * retrofit
+ * retrofit vt. 改进；[计] 更新；式样翻新 n. 式样翻新；花样翻新
 
 # 52 User overloading judicously
 
