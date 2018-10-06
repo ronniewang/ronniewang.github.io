@@ -5,3 +5,4 @@
   * 52 [Use overloading judicously](52-use-overloading-judicously.html)
   * 53 [Use varargs judicously](53-use-varargs-judicously.html)
   * 54 [Return empty collections or arrays, not nulls](54-return-empty-collections-or-arrays-not-nulls.html)
+  * 55 [Return optionals judicously](55-return-optionals-judicously.html)
