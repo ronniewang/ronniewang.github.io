@@ -1,5 +1,7 @@
 [《Effective Java 3rd Edition》](effective-java-3rd-edition-catalog.html)
 
+# 词句
+
 * This item is a grab bag of API design hints that don’t quite deserve items of their own
   * grab bag n. 摸彩袋；混杂
 * they’ll help make your API easier to learn and use and less prone to errors
@@ -37,7 +39,7 @@ For parameter types, favor interfaces over classes (Item 64). If there is an app
 Prefer two-element enum types to boolean parameters, unless the meaning of the boolean is clear from the method name. Enums make your code easier to read and to write. Also, they make it easy to add more options later. For example, you might have a Thermometer type with a static factory that takes this enum:
 
 ```java
-   public enum TemperatureScale { FAHRENHEIT, CELSIUS }
+public enum TemperatureScale { FAHRENHEIT, CELSIUS }
 ```
 
 Not only does Thermometer.newInstance(TemperatureScale.CELSIUS) make a lot more sense than Thermometer.newInstance(true), but you can add KELVIN to TemperatureScale in a future release without having to add a new static factory to Thermometer. Also, you can refactor temperature-scale dependencies into methods on the enum constants (Item 34). For example, each scale constant could have a method that took a double value and converted it to Celsius.

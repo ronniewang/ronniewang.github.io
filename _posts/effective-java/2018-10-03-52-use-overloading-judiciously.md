@@ -1,5 +1,7 @@
 [《Effective Java 3rd Edition》](effective-java-3rd-edition-catalog.html)
 
+# 词句
+
 * use overloading judicously
   * judicously [dʒu:'diʃəsli] adv. 明智而审慎地；明断地
 * SparklingWine and Champagne
@@ -40,26 +42,26 @@
 The following program is a well-intentioned attempt to classify collections according to whether they are sets, lists, or some other kind of collection:
 
 ```java
- // Broken! - What does this program print?
- public class CollectionClassifier {
-     public static String classify(Set<?> s) {
-         return "Set";
-     }
-     public static String classify(List<?> lst) {
-         return "List";
-     }
-     public static String classify(Collection<?> c) {
-         return "Unknown Collection";
-     }
-     public static void main(String[] args) {
-         Collection<?>[] collections = {
-             new HashSet<String>(),
-             new ArrayList<BigInteger>(),
-             new HashMap<String, String>().values()
-         };
-       for (Collection<?> c : collections)
-           System.out.println(classify(c));
-     }
+// Broken! - What does this program print?
+public class CollectionClassifier {
+  public static String classify(Set<?> s) {
+    return "Set";
+  }
+  public static String classify(List<?> lst) {
+    return "List";
+  }
+  public static String classify(Collection<?> c) {
+    return "Unknown Collection";
+  }
+  public static void main(String[] args) {
+    Collection<?>[] collections = {
+      new HashSet<String>(),
+      new ArrayList<BigInteger>(),
+      new HashMap<String, String>().values()
+    };
+    for (Collection<?> c : collections)
+      System.out.println(classify(c));
+  }
 }
 ```
 
@@ -69,21 +71,20 @@ The behavior of this program is counterintuitive because selection among overloa
 
 ```java
 class Wine {
-   String name() { return "wine"; }
+  String name() { return "wine"; }
 }
 class SparklingWine extends Wine {
-   @Override String name() { return "sparkling wine"; }
+  @Override String name() { return "sparkling wine"; }
 }
 class Champagne extends SparklingWine {
-   @Override String name() { return "champagne"; }
+  @Override String name() { return "champagne"; }
 }
 public class Overriding {
-   public static void main(String[] args) {
-      List<Wine> wineList = List.of(
-        new Wine(), new SparklingWine(), new Champagne());
-      for (Wine wine : wineList)
-        System.out.println(wine.name());
-   }
+  public static void main(String[] args) {
+    List<Wine> wineList = List.of(new Wine(), new SparklingWine(), new Champagne());
+    for (Wine wine : wineList)
+      System.out.println(wine.name());
+  }
 }
 ```
 
@@ -93,8 +94,7 @@ In the CollectionClassifier example, the intent of the program was to discern th
 
 ```java
 public static String classify(Collection<?> c) {
-   return c instanceof Set  ? "Set" :
-      c instanceof List ? "List" : "Unknown Collection";
+  return c instanceof Set ? "Set" : c instanceof List ? "List" : "Unknown Collection";
 }
 ```
 
@@ -112,19 +112,19 @@ Prior to Java 5, all primitive types were radically different from all reference
 
 ```java
 public class SetList {
-   public static void main(String[] args) {
-       Set<Integer> set = new TreeSet<>();
-       List<Integer> list = new ArrayList<>();
-       for (int i = -3; i < 3; i++) {
-           set.add(i);
-           list.add(i);
-       }
-       for (int i = 0; i < 3; i++) {
-           set.remove(i);
-           list.remove(i);
-       }
-       System.out.println(set + " " + list);
-   }
+  public static void main(String[] args) {
+    Set<Integer> set = new TreeSet<>();
+    List<Integer> list = new ArrayList<>();
+    for (int i = -3; i < 3; i++) {
+      set.add(i);
+      list.add(i);
+    }
+    for (int i = 0; i < 3; i++) {
+      set.remove(i);
+      list.remove(i);
+    }
+    System.out.println(set + " " + list);
+  }
 }
 ```
 
@@ -134,8 +134,8 @@ Here’s what’s happening: The call to set.remove(i) selects the overloading r
 
 ```java
 for (int i = 0; i < 3; i++) {
-   set.remove(i);
-   list.remove((Integer) i); // or remove(Integer.valueOf(i))
+  set.remove(i);
+  list.remove((Integer) i); // or remove(Integer.valueOf(i))
 }
 ```
 
@@ -163,8 +163,8 @@ While the resulting overloading clearly violates the guidelines in this item, it
 
 ```java
 // Ensuring that 2 methods have identical behavior by forwarding
-   public boolean contentEquals(StringBuffer sb) {
-       return contentEquals((CharSequence) sb);
+public boolean contentEquals(StringBuffer sb) {
+  return contentEquals((CharSequence) sb);
 }
 ```
 

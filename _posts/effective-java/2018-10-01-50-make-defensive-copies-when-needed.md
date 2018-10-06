@@ -1,6 +1,6 @@
 [《Effective Java 3rd Edition》](effective-java-3rd-edition-catalog.html)
 
-本篇有难度的词句（Just for me）
+# 词句
 
 * it is immune to buffer overruns
   * immune adj. 免疫的；免于……的，免除的 n. 免疫者；免除者
@@ -40,31 +40,29 @@ Even in a safe language, you aren’t insulated from other classes without some 
 While it is impossible for another class to modify an object’s internal state without some assistance from the object, it is surprisingly easy to provide such assistance without meaning to do so. For example, consider the following class, which purports to represent an immutable time period:
 
 ```java
- // Broken "immutable" time period class
- public final class Period {
-     private final Date start;
-     private final Date end;
-     /**
-     * @param start the beginning of the period
-     * @param end the end of the period; must not precede start * @throws IllegalArgumentException if start is after end
-     * @throws NullPointerException if start or end is null
-     */
-     public Period(Date start, Date end) {
-         if (start.compareTo(end) > 0)
-             throw new IllegalArgumentException(
-                 start + " after " + end);
-         this.start = start;
-         this.end   = end;
-     }
-     public Date start() {
-         return start;
-     }
-
-     public Date end() {
-         return end;
-     }
-     ...  // Remainder omitted
- }
+// Broken "immutable" time period class
+public final class Period {
+  private final Date start;
+  private final Date end;
+  /**
+  * @param start the beginning of the period
+  * @param end the end of the period; must not precede start * @throws IllegalArgumentException if start is after end
+  * @throws NullPointerException if start or end is null
+  */
+  public Period(Date start, Date end) {
+    if (start.compareTo(end) > 0)
+      throw new IllegalArgumentException(start + " after " + end);
+    this.start = start;
+    this.end   = end;
+  }
+  public Date start() {
+    return start;
+  }
+  public Date end() {
+    return end;
+  }
+  ...  // Remainder omitted
+}
 ```
 
 At first glance, this class may appear to be immutable and to enforce the invariant that the start of a period does not follow its end. It is, however, easy to violate this invariant by exploiting the fact that Date is mutable:
@@ -80,12 +78,12 @@ As of Java 8, the obvious way to fix this problem is to use Instant (or LocalDat
 
 To protect the internals of a Period instance from this sort of attack, it is essential to make a defensive copy of each mutable parameter to the constructor and to use the copies as components of the Period instance in place of the originals:
 ```java
- // Repaired constructor - makes defensive copies of parameters
- public Period(Date start, Date end) {
-     this.start = new Date(start.getTime());
-     this.end   = new Date(end.getTime());
-     if (this.start.compareTo(this.end) > 0)
-       throw new IllegalArgumentException(this.start + " after " + this.end);
+// Repaired constructor - makes defensive copies of parameters
+public Period(Date start, Date end) {
+  this.start = new Date(start.getTime());
+  this.end   = new Date(end.getTime());
+  if (this.start.compareTo(this.end) > 0)
+    throw new IllegalArgumentException(this.start + " after " + this.end);
 }
 ```
 
@@ -107,11 +105,11 @@ To defend against the second attack, merely modify the accessors to return defen
 
 ```java
 // Repaired accessors - make defensive copies of internal fields
-   public Date start() {
-       return new Date(start.getTime());
+public Date start() {
+  return new Date(start.getTime());
 }
-   public Date end() {
-       return new Date(end.getTime());
+public Date end() {
+  return new Date(end.getTime());
 }
 ```
 
