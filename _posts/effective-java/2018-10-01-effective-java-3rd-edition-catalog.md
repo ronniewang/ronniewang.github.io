@@ -6,3 +6,4 @@
   * 53 [Use varargs judicously](53-use-varargs-judicously.html)
   * 54 [Return empty collections or arrays, not nulls](54-return-empty-collections-or-arrays-not-nulls.html)
   * 55 [Return optionals judicously](55-return-optionals-judicously.html)
+  * 56 [Write doc comments for all exposed API elements](56-write-doc-comments-for-all-exposed-api-elements.html)
