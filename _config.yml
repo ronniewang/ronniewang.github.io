@@ -2,3 +2,9 @@ baseurl: /
 markdown: kramdown
 #permalink: /:categories/:title.html
 permalink: /:title.html
+
+title: Ronniewang.gihub.io
+description: 
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-cayman
