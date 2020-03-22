@@ -55,6 +55,10 @@ public class PolyConstructors {
 }
 ```
 
+可以在脑中推演一下，看看这段代码的输出是什么？
+
+下面是实际的输出
+
 ```
 Output:
 Glyph() before draw()
