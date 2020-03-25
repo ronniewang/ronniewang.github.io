@@ -125,17 +125,16 @@ ServletSessionBindingListener和ServletSessionAttributeListener共用HttpSession
 这里我们简单举一个例子说明一下如何实现上述的 Listener，Spring MVC 中的 `org.springframework.web.context.ContextLoaderListener` 实现了 `ServletContextListener`，主要代码如下
 
 ```java
+@Override
+public void contextInitialized(ServletContextEvent event) {
+  initWebApplicationContext(event.getServletContext());
+}
 
-	@Override
-	public void contextInitialized(ServletContextEvent event) {
-		initWebApplicationContext(event.getServletContext());
-	}
-
-	@Override
-	public void contextDestroyed(ServletContextEvent event) {
-		closeWebApplicationContext(event.getServletContext());
-		ContextCleanupListener.cleanupAttributes(event.getServletContext());
-	}
+@Override
+public void contextDestroyed(ServletContextEvent event) {
+  closeWebApplicationContext(event.getServletContext());
+  ContextCleanupListener.cleanupAttributes(event.getServletContext());
+}
   ```
   
 从代码中我们看出，contextInitialized 方法初始化了 WebApplicationContext，contextDestroyed 方法关闭了 WebApplicationContext，并做了一些清理工作
